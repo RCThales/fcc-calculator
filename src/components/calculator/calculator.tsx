@@ -121,7 +121,7 @@ const Calculator = () => {
           <CalculatorButtons
             id={"zero"}
             functionHandler={handleClick}
-            number={0}
+            number={"0"}
           />
           <CalculatorButtons
             id={"decimal"}

@@ -1,6 +1,10 @@
 import "./calculator-button.css";
 
-const CalculatorButtons = ({ number, functionHandler, id }) => {
+const CalculatorButtons = ({
+  number,
+  functionHandler,
+  id,
+}: CalculatorButtonsProps) => {
   return (
     <button
       className="calculator_button"
