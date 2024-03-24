@@ -1,5 +1,5 @@
 interface CalculatorButtonsProps {
-  number: string;
+  buttonClicked: string;
   functionHandler: Function;
   id: string;
 }
