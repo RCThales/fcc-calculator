@@ -15,13 +15,21 @@
 }
 
 #display {
-  background-color: rgb(57, 64, 71);
+  background-color: rgb(35, 37, 40);
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 50%
+    ),
+    linear-gradient(rgba(255, 255, 255, 0.05) 50%, transparent 50%);
+  background-size: 5px 5px;
+
+  /* The rest of your styles */
   width: 100%;
   font-size: 2rem;
   display: flex;
   justify-content: flex-end;
   flex-wrap: nowrap;
-
   padding-left: 0px;
   max-width: 400px;
   height: 50px;
@@ -36,7 +44,16 @@
   border-radius: 10px;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
+
   display: flex;
+}
+
+.copyright {
+  color: rgb(86, 86, 86);
+  text-align: center;
+  font-weight: 700;
+  margin: auto;
 }
 
 .button-panel-menu button:last-child {
