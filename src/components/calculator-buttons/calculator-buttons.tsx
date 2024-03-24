@@ -1,7 +1,7 @@
 import "./calculator-button.css";
 
-const clickSound = new Audio("../../public/click.mp3");
-const victorySound = new Audio("../../public/victory.wav");
+const clickSound = new Audio("/click.mp3");
+const victorySound = new Audio("/victory.wav");
 const CalculatorButtons = ({
   buttonClicked,
   functionHandler,
