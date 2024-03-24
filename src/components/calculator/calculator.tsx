@@ -81,7 +81,6 @@ const Calculator = () => {
       </div>
       <div className="button-panel-calculate">
         <div className="button-panel">
-          {/* You will add buttons here */}
           <CalculatorButtons
             id={"nine"}
             functionHandler={handleClick}
@@ -142,7 +141,6 @@ const Calculator = () => {
             functionHandler={handleClick}
             buttonClicked={"="}
           />
-          {/* Add other buttons similarly */}
         </div>
         <div className="button-panel-symbols">
           <CalculatorButtons
