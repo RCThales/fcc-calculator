@@ -7,3 +7,7 @@ body {
   width: 100vw;
   overflow: hidden;
 }
+
+* {
+  font-family: "Poppins", sans-serif;
+}
