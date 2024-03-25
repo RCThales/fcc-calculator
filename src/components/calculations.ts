@@ -2,7 +2,7 @@ const isSymbol = (value: string): boolean =>
   new Set(["x", "/", "-", "*", "=", "+", "."]).has(value);
 
 const canSymbolBeUsed = (buttonValue: string, expression: string): boolean => {
-  if (buttonValue === "-" && isLastCharMinus(expression)) {
+  if (isCharMinus(buttonValue) && isLastCharMinus(expression)) {
     return false;
   }
 
@@ -10,7 +10,7 @@ const canSymbolBeUsed = (buttonValue: string, expression: string): boolean => {
     return true;
   }
 
-  if (buttonValue === "-" && isLastCharSymbol(expression)) {
+  if (isCharMinus(buttonValue) && isLastCharSymbol(expression)) {
     return true;
   }
 
@@ -28,6 +28,9 @@ const isLastCharSymbol = (expression: string): boolean => {
 
 const isLastCharMinus = (expression: string): boolean => {
   return expression.endsWith("-");
+};
+const isCharMinus = (char: string): boolean => {
+  return char === "-";
 };
 
 const isSecondLastCharSymbol = (expression: string): boolean => {
